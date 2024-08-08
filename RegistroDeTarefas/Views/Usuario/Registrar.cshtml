@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Registrar";
+}
+
+<h2>Registrar</h2>
+
+<form method="post">
+    <div>
+        <label>Nome:</label>
+        <input type="text" name="nome" class="form-control" />
+    </div>
+    <div>
+        <label>Login:</label>
+        <input type="text" name="login" class="form-control" />
+    </div>
+    <div>
+        <label>Senha:</label>
+        <input type="password" name="senha" class="form-control" />
+    </div>
+    <div>
+        <input type="submit" value="Registrar" class="btn btn-primary" />
+    </div>
+</form>
+
+<p>Já tem uma conta? <a href="@Url.Action("Login", "Usuario")">Faça login aqui</a></p>
